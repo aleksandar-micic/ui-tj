@@ -1,0 +1,49 @@
+tj-wizard.slide .steps {
+  position: relative;
+  overflow: hidden;
+}
+
+tj-wizard.slide .step {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  display: none;
+  position: relative;
+  top: 0;
+}
+
+tj-wizard.slide .step.active {
+  display: block;
+  left: 0;
+}
+
+tj-wizard.slide .step.active-add {
+  display: block;
+  left: 0;
+  position: absolute;
+}
+
+tj-wizard.slide .prev.step.active-add {
+  left: -100%;
+}
+
+tj-wizard.slide .next.step.active-add {
+  left: 100%;
+}
+
+tj-wizard.slide .step.active.active-add.active-add-active {
+  left: 0;
+}
+
+tj-wizard.slide .step.active-remove {
+  display: block;
+  left: 0;
+}
+
+tj-wizard.slide .prev.step.active-remove.active-remove-active {
+  left: 100%;
+}
+
+tj-wizard.slide .next.step.active-remove.active-remove-active {
+  left: -100%;
+}
